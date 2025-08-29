@@ -45,6 +45,17 @@ func main() {
 
 	logEvents("Server Connected , DB connected , User logged in")
 
+	// Defer Keyword Usage
+
+	fmt.Println("Start")
+
+	defer fmt.Println("File Clean Up") // Run sb se akhir mein End
+
+	fmt.Println("End")
+
+	HandleRequest("Ahmad")
+	HandleRequest("")
+
 }
 
 // Basic Funtion
@@ -115,11 +126,26 @@ func getUserInfo(id int) (name, age string) {
 
 func logEvents(events ...string) {
 
-	for _,e := range events {
+	for _, e := range events {
 
 		fmt.Println("Log :", e)
 	}
 
+}
+
+func HandleRequest(user string) {
+
+	fmt.Println("Handling Request for ", user)
+
+	defer fmt.Println("Closing Request for ", user) // No matter what happend but we want to close the request when handling request in backend
+
+	if user == "" {
+
+		fmt.Println("Error: No user Provided")
+		return
+	}
+
+	fmt.Println("Request Handle Succesfully for", user)
 }
 
 // log events = events[]string slice string ha jis mein ... string se jo values ai gi accept ho kr iss ke ander store hogi
@@ -128,3 +154,5 @@ func logEvents(events ...string) {
 // e holds each every value everytime when loops and ... accepts mutiple strings
 // range events like range givews us index or values from events slice
 // then e hold that value in eveey loop and then print it in
+
+// Defer keyword in Functions of Go
