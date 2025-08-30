@@ -56,6 +56,16 @@ func main() {
 	HandleRequest("Ahmad")
 	HandleRequest("")
 
+	// Anoynymus Functions and Closures
+    // Bina name ke function ko anonymus kehte hain
+	// is ko variable mein store krke as a function used krskte hain
+	greet := func(name string) string {
+
+		return "Hello" + name
+	}
+
+	fmt.Println(greet("Ahmad"))
+
 }
 
 // Basic Funtion
