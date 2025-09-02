@@ -108,4 +108,29 @@ func main() {
 		fmt.Println("Names are: ", user)
 	}
 
+	// We can Also create a slice using make funtion
+
+	myslice5 := make([]int, 5) //, 10) // 5= lenght or 10 = capacity if capacity is not given its equal to lenght
+
+	fmt.Println(myslice5)
+	fmt.Println(len(myslice5))
+	fmt.Println(cap(myslice5))
+
+	// How to replace or the current element in slice
+
+	myslice6 := []int{4, 5, 2, 13}
+
+	myslice6[1] = 12
+
+	fmt.Println(myslice6)
+
+	// How to append multiple slices in one slice in golang
+
+	myslice7 := []int{1, 2, 3}
+	myslice8 := []int{4, 5, 6}
+
+	myslice9 := append(myslice7, myslice8...)
+
+	fmt.Println(myslice9)
+
 }
