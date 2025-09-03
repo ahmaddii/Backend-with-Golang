@@ -133,4 +133,6 @@ func main() {
 
 	fmt.Println(myslice9)
 
+	// This is the Slices which we wanted to study
+
 }
