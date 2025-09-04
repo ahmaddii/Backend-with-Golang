@@ -120,7 +120,7 @@ func main() {
 
 	myslice6 := []int{4, 5, 2, 13}
 
-	myslice6[1] = 12
+	myslice6[1] =  14
 
 	fmt.Println(myslice6)
 
