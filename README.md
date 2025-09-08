@@ -30,8 +30,8 @@ Make sure you have Go installed → Install Go
 
 Clone this repo:
 
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+https://github.com/ahmaddii/Backend-with-Golang/tree/main
+cd Backend-with-Golang
 
 
 Run a file:
