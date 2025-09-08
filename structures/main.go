@@ -31,8 +31,8 @@ func main() {
 
 	user2 := User{
 
-		name:  "Hassan",
-		Age:   20,
+		name:  "Hassan", // lower case measn private 
+		Age:   20, // upper case measn public
 		Email: "hassan@gmail.com",
 	}
 
@@ -64,5 +64,7 @@ func main() {
 	fmt.Println(users[1].name)
 
 	fmt.Println(users[0].Age)
+
+	fmt.Println(users[0])
 
 }
