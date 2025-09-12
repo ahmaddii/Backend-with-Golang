@@ -35,4 +35,27 @@ func main() {
 	fmt.Println("Developers Values ", *Developers) // * gives values inside the address which is saved in this case the address and value both are stored in this variable
 	fmt.Println("Devops Value ", *Devops)          // without * it gives the address as you know the address is stored but when used * it gives address value simple
 	fmt.Println("Bash Value", *Bash)
+
+	// Pointers using functions with pointers you can modify original value
+	// without pointers
+
+	number := 20
+
+	fmt.Println("Before :", number) // there we just pass the copy so witout pointer you are just creating copy of orginal
+
+	// but below we use the memory address to change the actual value of number from 20 to 40
+
+	// as function is pointer function
+
+	changeValue(&number) // you pass the actual address of number thats why original value which is 20 changes to 40
+	fmt.Println("After :", number)
+
+	// & That means the function can directly access and modify the original number box, not a copy.
+
+}
+
+func changeValue(num *int) {
+
+	*num = 40 // num is pointer and stores the 40 value num is pointing to 40
+
 }
