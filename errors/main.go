@@ -42,6 +42,6 @@ func main() {
 		return
 	}
 
-	fmt.Println("Welcome user 2: ", result2)
+	fmt.Println("Welcome user 2 you are here: ", result2)
 
 }
