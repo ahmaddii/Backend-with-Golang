@@ -20,7 +20,7 @@ func channelcount(animalName string, c chan string) {
 
 func main() {
 
-	c := make(chan string, 2) // creates an unbuffered Channel whose capacity is zero
+	c := make(chan string, 2) // creates an buffered Channel whose capacity is 2
 
 	//c <- "Hello World" // it waits there until some one  takes in out so it creates a deadlock
 
