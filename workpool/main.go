@@ -19,7 +19,7 @@ func worker(Id int, jobs <-chan int, results chan<- int) {
 
 func main() {
 
-	numJobs := 5 // USER NE 5 chezon ke request bheji ha 
+	numJobs := 5 // USER NE 5 chezon ke request bheji ha
 
 	jobs := make(chan int, numJobs)
 	results := make(chan int, numJobs)
@@ -51,7 +51,6 @@ func main() {
 	}
 
 }
-
 
 //Why Worker Pools Are Useful in Backends
 
